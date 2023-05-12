@@ -60,6 +60,13 @@ h2
     font-size: 40px;
 }
 
+h3
+{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: bold;
+}
+
 h6
 {
     font-family: 'Helvetica';
@@ -110,7 +117,7 @@ h6
 {
     background-position: 0 0%;
     background-size: 100% 100%;
-    color: black;
+    color: rgb(36, 36, 36);
     transition: background-position 0.2s, background-size 0.35s, color 0.3s, border-color 0.3s;
 }
 
@@ -121,6 +128,36 @@ h6
     color: #ffc644;
     border-color: #ffc644;
     transition: background-position 0.25s, background-size 0.35s, color 0.1s, border-color 0.1s;
+}
+
+.link
+{
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background: linear-gradient(to bottom, #ffc644 0%, #ffc644 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+    transition: background-position 0.4s, background-size 0.35s, color 0.2s;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.link:hover
+{
+    background-position: 0 0%;
+    background-size: 100% 100%;
+    color: rgb(36, 36, 36);
+    transition: background-position 0.2s, background-size 0.35s, color 0.3s;
+}
+
+.link:active
+{
+    background-position: 0 0%;
+    background-size: 100% 2px;
+    color: inherit;
+    transition: background-position 0.25s, background-size 0.35s, color 0.1s;
 }
 
 .nav
@@ -159,29 +196,36 @@ h6
 
 .gallery
 {
-    
-}
-
-.gallery div
-{
-    float: left;
-    margin: 5px;
-    width: 180px;
-}
-
-.gallery div img
-{
-    /* width: 300;
-    height: 300; */
-    object-fit: cover;
+    margin: auto;
+    align-content: center;
     width: 100%;
 }
 
-.galleryLeft
+.gallery line
 {
-    float: left;
-    width: 33%;
-    margin: 0;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery line div
+{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+.gallery line div img
+{
+    width: inherit;
+    height: inherit;
+    object-fit:cover;
+}
+
+.gallery line div h3
+{
+    text-align: center;
+    margin-top: 6px;
 }
 
 #alignLeft
