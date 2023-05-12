@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Qua';
+    font-style: normal;
+    src: url("fonts/UglyQua.ttf");
+}
+
+@font-face {
+    font-family: 'Qua';
+    font-style: italic;
+    src: url("fonts/UglyQua-Italic.ttf");
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    src: url("fonts/HelveticaNowText-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: bold;
+    src: url("fonts/HelveticaNowText-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: italic;
+    src: url("HelveticaNowText-RegIta.ttf");
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: bold;
+    src: url("HelveticaNowText-BoldItalic.ttf");
+}
+
+body
+{
+    font-family: 'Helvetica';
+    font-size: 12px;
+
+    background-color: rgb(36, 36, 36);
+    color: #ffc644;
+}
+
+h1, h2
+{
+    font-family: 'Qua';
+    font-size: 100px;
+    font-weight: normal;
+    line-height: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+h6
+{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.center
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.button
+{
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+
+    /* border: 2px solid white; */
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 20px;
+
+    /* outline: 2px solid rgba(255, 199, 68, 0);
+    outline-offset: -2px;
+    outline-width: 2px; */
+
+    background: linear-gradient(to bottom, #ffc644 0%, #ffc644 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 4px;
+    transition: background-position 0.4s, background-size 0.35s, color 0.2s, border-color 0.2s;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover
+{
+    background-position: 0 0%;
+    background-size: 100% 100%;
+    color: black;
+    transition: background-position 0.2s, background-size 0.35s, color 0.3s, border-color 0.3s;
+}
+
+.button:active
+{
+    background-position: 0 0%;
+    background-size: 100% 4px;
+    color: #ffc644;
+    border-color: #ffc644;
+    transition: background-position 0.25s, background-size 0.35s, color 0.1s, border-color 0.1s;
+}
+
+.nav
+{
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    height: 90px;
+    position: sticky;
+    top: 0px;
+    background-color:rgb(36, 36, 36);
+}
+
+.mainNav ul
+{
+    list-style: none;
+    /* position: sticky; */
+    
+    /* text-align: center; */
+    /* margin: auto; */
+    /* width: 100%; */
+    /* margin-top: 20px; */
+}
+
+.mainNav ul li
+{
+    /* font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; */
+
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    /* padding: 24px; */
+}
+
+.gallery
+{
+    
+}
+
+.gallery div
+{
+    float: left;
+    margin: 5px;
+    width: 180px;
+}
+
+.gallery div img
+{
+    /* width: 300;
+    height: 300; */
+    object-fit: cover;
+    width: 100%;
+}
+
+.galleryLeft
+{
+    float: left;
+    width: 33%;
+    margin: 0;
+}
+
+#alignLeft
+{
+    text-align: left;
+    margin-left: 18px;
+    /* background-color: rgba(89, 43, 255, 0.575); */
+}
+
+#alignCenter
+{
+    text-align: center;
+    /* background-color: rgba(255, 225, 0, 0.575); */
+}
+
+#alignRight
+{
+    text-align: right;
+    margin-right: 18px;
+    /* background-color: rgba(89, 43, 255, 0.575); */
+}
+
+#topSpace
+{
+    margin-top: 90px;
+}
+
+#subHeading
+{
+    margin-top: -8px;
+}
