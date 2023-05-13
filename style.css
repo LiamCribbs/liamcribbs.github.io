@@ -267,6 +267,11 @@ footer
     color: rgb(239, 239, 239);
 }
 
+#hamMenu
+{
+
+}
+
 @media screen and (max-width: 1480px)
 {
     .nav
@@ -468,7 +473,7 @@ footer
 
     .imgHeader h1
     {
-        font-size: 12vw;
+        font-size: 1vw;
         margin-bottom: 8px;
     }
 

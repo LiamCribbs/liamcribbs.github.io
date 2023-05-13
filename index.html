@@ -59,7 +59,7 @@
             </nav>
         </div>
 
-        <div class="hamMenu">
+        <div class="hamMenu" id="hamMenu">
             <a href="javascript:void(0)" onclick="myFunction()">
                 <span class="link material-symbols-outlined" style="padding-left:5px; padding-right:5px; font-size: 50px;">
                     menu
@@ -180,10 +180,13 @@
         <script>
             function myFunction() {
               var x = document.getElementById("toggleMenu");
+              var bkg = document.getElementById("hamMenu");
               if (x.style.display === "block") {
                 x.style.display = "none";
+                //bkg.style.backgroundColor = "transparent";
               } else {
                 x.style.display = "block";
+                //bkg.style.backgroundColor = "rgb(36, 36, 36)";
               }
             }
         </script>
