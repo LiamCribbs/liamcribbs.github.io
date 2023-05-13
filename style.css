@@ -39,7 +39,8 @@
 body
 {
     font-family: 'Helvetica';
-    font-size: 1rem;
+    font-size: 1em;
+    -webkit-text-size-adjust: 300%;
 
     background-color: rgb(36, 36, 36);
     color: #ffc644;
