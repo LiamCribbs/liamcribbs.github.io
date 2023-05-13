@@ -258,10 +258,7 @@ footer
     z-index: 10;
     background-color: rgb(36, 36, 36);
 
-    /* max-width: 200px; */
-    padding: 6px 6px;
-    margin-left: 80vw;
-    margin-right: 0;
+    width: 100%;
 }
 
 .hamMenu h3
