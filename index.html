@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="script.js"></script>
         <title>
             Liam Cribbs
         </title>
@@ -25,17 +26,17 @@
                             Games
                         </li>
                     </a>
-                    <a>
+                    <a href="techart.html">
                         <li class="button">
                             Tech Art
                         </li>
                     </a>
-                    <a>
+                    <a href="animation.html">
                         <li class="button">
                             3D Animation
                         </li>
                     </a>
-                    <a>
+                    <a href="ui.html">
                         <li class="button">
                             UI
                         </li>
@@ -45,7 +46,7 @@
             
             <nav class="alignRight mainNav">
                 <ul>
-                    <a>
+                    <a href="about.html">
                         <li class="button">
                             About
                         </li>
@@ -60,32 +61,32 @@
         </div>
 
         <div class="hamMenu">
-            <a href="javascript:void(0)" onclick="myFunction()">
+            <a href="javascript:void(0)" onclick="toggleHam()">
                 <span class="link material-symbols-outlined" id="hamButton" style="padding-left:5px; padding-right:5px; font-size: 50px;">
                     menu
                 </span>
             </a>
             <div id="toggleMenu">
-                <a>
+                <a href="#top">
                     <h3 class="link">Home</h3>
                 </a>
-                <a>
+                <a href="#games">
                     <h3 class="link">Games</h3>
                 </a>
-                <a>
+                <a href="techart.html">
                     <h3 class="link">Tech Art</h3>
                 </a>
-                <a>
+                <a href="animation.html">
                     <h3 class="link">3D Animation</h3>
                 </a>
-                <a>
+                <a href="ui.html">
                     <h3 class="link">UI</h3>
                 </a>
                 <div style="margin: 60px 0px;"></div>
-                <a>
+                <a href="about.html">
                     <h3 class="link">About</h3>
                 </a>
-                <a>
+                <a href="resume.html">
                     <h3 class="link">Resume</h3>
                 </a>
             </div>
@@ -176,20 +177,5 @@
                 <a href="about.html" style="margin-left:100px;"><p class="link">Contact</p></a>
             </div>
         </footer>
-
-        <script>
-            function myFunction() {
-              var x = document.getElementById("toggleMenu");
-              var button = document.getElementById("hamButton");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-                button.innerHTML = "menu";
-              } else {
-                x.style.display = "block";
-                button.innerHTML = "close";
-              }
-            }
-        </script>
-
     </body>
 </html>
