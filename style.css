@@ -121,6 +121,14 @@ footer
     display: flex;
 }
 
+@media screen and (max-width: 700px)
+{
+    h1
+    {
+        font-size: 3.5em;
+    }
+}
+
 .center
 {
     display: block;
@@ -353,6 +361,15 @@ footer
 {
     text-align: center;
     margin-top: 6px;
+}
+
+@media screen and ((max-width: 800px) or (orientation: portrait))
+{
+    .gallery div
+    {
+        width: 90vw;
+        height: 90vw;
+    }
 }
 
 .content
