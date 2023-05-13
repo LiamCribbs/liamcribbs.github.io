@@ -307,7 +307,7 @@ footer
 .content
 {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
 #alignLeft
@@ -353,6 +353,7 @@ footer
     width: 100%;
     margin: 0;
     height: 600px;
+    /* height: 30vw; */
     margin-bottom: 50px;
 }
 
@@ -365,6 +366,9 @@ footer
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
 }
 
 .headerSection
@@ -372,14 +376,13 @@ footer
     position: absolute;
     display: inline-block;
 
-    right: 0px;
-    top: 140px;
-    left: 0px;
-    bottom: 0px;
+    width: 100%;
     height: inherit;
 
     box-sizing: border-box;
 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -393,6 +396,31 @@ footer
 .imgHeader h6
 {
     color:rgb(36, 36, 36);
+}
+
+@media screen and (max-width: 767px)
+{
+    .imgHeader
+    {
+        height: 30vw;
+    }
+
+    .imgHeader bkg
+    {
+        background-size: contain;
+        height: 30vw;
+    }
+
+    .imgHeader h1
+    {
+        font-size: min(6.5em, 12vw);
+        margin-bottom: 8px;
+    }
+
+    .imgHeader h6
+    {
+        font-size: min(1.2em, 3vw);
+    }
 }
 
 #topSpace
