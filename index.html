@@ -61,7 +61,7 @@
 
         <div class="hamMenu">
             <a href="javascript:void(0)" onclick="myFunction()">
-                <span class="link material-symbols-outlined" style="padding-left:5px; padding-right:5px; font-size: 50px;">
+                <span class="link material-symbols-outlined" id="hamButton" style="padding-left:5px; padding-right:5px; font-size: 50px;">
                     menu
                 </span>
             </a>
@@ -180,10 +180,13 @@
         <script>
             function myFunction() {
               var x = document.getElementById("toggleMenu");
+              var button = document.getElementById("hamButton");
               if (x.style.display === "block") {
                 x.style.display = "none";
+                button.innerHTML = "menu";
               } else {
                 x.style.display = "block";
+                button.innerHTML = "close";
               }
             }
         </script>

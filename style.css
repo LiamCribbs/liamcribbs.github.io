@@ -467,7 +467,7 @@ footer
 
     .imgHeader h1
     {
-        font-size: 12px;
+        font-size: min(48px, 40vw);
         margin-bottom: 8px;
     }
 
