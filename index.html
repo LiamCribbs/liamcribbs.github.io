@@ -58,6 +58,14 @@
             </nav>
         </div>
 
+        <div>
+            <div id="toggleMenu">
+                <p>hi there</p>
+                <p>hehe</p>
+            </div>
+            <a href="javascript:void(0)" onclick="myFunction()">CLICKME</a>
+        </div>
+
         <header>
             <section class="center">
                 <h1 id="topSpace">Stanlaker Gorbonule</h1>
@@ -143,5 +151,17 @@
                 <a href="about.html" style="margin-left:100px;"><p class="link">Contact</p></a>
             </div>
         </footer>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("toggleMenu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+
     </body>
 </html>
