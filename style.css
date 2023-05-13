@@ -308,7 +308,10 @@ footer
 .content
 {
     max-width: 1200px;
-    margin: 0 30px;
+    display: block;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #alignLeft
@@ -422,6 +425,11 @@ footer
     {
         font-size: min(1.2em, 3vw);
     }
+}
+
+.itchWidget
+{
+    width: min(552px, 80%);
 }
 
 #topSpace
