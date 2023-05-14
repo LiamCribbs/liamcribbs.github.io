@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="script.js"></script>
+        <title>
+            Liam Cribbs
+        </title>
+        <meta name="description" content="Liam Cribbs' Portfolio">
+        <meta name="keywords" content="Liam Cribbs">
+        <meta name="author" content="Liam Cribbs">
+    </head>
+
+    <body>
+        <div class="nav">
+            <div></div>
+            <nav class="alignCenter mainNav">
+                <ul>
+                    <a href="index.html">
+                        <li class="button">
+                            Home
+                        </li>
+                    </a>
+                    <a href="index.html#games">
+                        <li class="button">
+                            Games
+                        </li>
+                    </a>
+                    <a href="techart.html">
+                        <li class="button">
+                            Tech Art
+                        </li>
+                    </a>
+                    <a href="animation.html">
+                        <li class="button">
+                            3D Animation
+                        </li>
+                    </a>
+                    <a href="ui.html">
+                        <li class="button">
+                            UI
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            
+            <nav class="alignRight mainNav">
+                <ul>
+                    <a href="about.html">
+                        <li class="button">
+                            About
+                        </li>
+                    </a>
+                    <a href="resume.html">
+                        <li class="button">
+                            Resume
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hamMenu">
+            <a href="javascript:void(0)" onclick="toggleHam()">
+                <span class="link material-symbols-outlined" id="hamButton" style="padding-left:5px; padding-right:5px; font-size: 50px;">
+                    menu
+                </span>
+            </a>
+            <div id="toggleMenu">
+                <a href="index.html">
+                    <h3 class="link">Home</h3>
+                </a>
+                <a href="index.html#games">
+                    <h3 class="link">Games</h3>
+                </a>
+                <a href="techart.html">
+                    <h3 class="link">Tech Art</h3>
+                </a>
+                <a href="animation.html">
+                    <h3 class="link">3D Animation</h3>
+                </a>
+                <a href="ui.html">
+                    <h3 class="link">UI</h3>
+                </a>
+                <div style="margin: 60px 0px;"></div>
+                <a href="about.html">
+                    <h3 class="link">About</h3>
+                </a>
+                <a href="resume.html">
+                    <h3 class="link">Resume</h3>
+                </a>
+            </div>
+        </div>
+        
+        <header class="imgHeader">
+            <bkg style="background-image: url('img/techart/RiftEffect.gif');">
+            <section class="center headerSection">
+                <h1 style="color: rgb(239, 239, 239)">Misc Shaders/Effects</h1>
+            </section>
+            </bkg>
+        </header>
+
+        <main>
+            <section>
+                <div class="smallNav">
+                    <a href="#shadow">
+                        <h3 class="link">Shadow Volumes</h3>
+                    </a>
+                    <a href="#rift">
+                        <h3 class="link">Rift Distortion</h3>
+                    </a>
+                    <a href="#lcd">
+                        <h3 class="link">LCD Effect</h3>
+                    </a>
+                    <a href="#truck">
+                        <h3 class="link">Retrofuturistic Truck</h3>
+                    </a>
+                    <a href="#ugly">
+                        <h3 class="link">'Ugly' Shader</h3>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="shadow">
+                    <h2 class="center">Shadow Volumes</h2>
+                    <p>
+                        A system for baking shadows for a toon shader. Volumes can be placed around the scene, each with its own lightness level. These get baked into a 3D texture that the shader can sample from using its world position. The volumes also have falloff options for smoothluy fading between shadow values.
+                    </p>
+                    
+                    <div class="simpleGallery" style="margin-top:0">
+                        <img src="img/techart/ShadowVolume1.png" width="1280" height="720" style="width:min(900px, 100%)">
+                        <img src="img/techart/ShadowVolume2.png" width="1280" height="720" style="width:min(900px, 100%)">
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="rift">
+                    <h2 class="center">Rift Distortion</h2>
+                    <p>
+                        A distortion screen effect when the player approaches a dimensional rift.
+                    </p>
+                    
+                    <img src="img/techart/RiftEffect.gif" width="1280" height="720" style="width:min(900px, 100%); height:auto;" class="center">
+                </article>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="lcd">
+                    <h2 class="center">LCD Effect</h2>
+                    <p>
+                        An LCD-screen shader with pixelation, chromatic aberration, and bloom.
+                    </p>
+                    
+                    <img src="img/techart/LCD.gif" width="1280" height="720" style="width:min(900px, 100%); height:auto;" class="center">
+                </article>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="truck">
+                    <h2 class="center">Retrofuturistic Truck/Monitor</h2>
+                    <p>
+                        A retrofuturistic/dieselpunk truck and monitor shader.
+                    </p>
+                    
+                    <div class="simpleGallery" style="margin-top:0">
+                        <img src="img/techart/Dieselpunk1.png" width="1280" height="720" style="width:min(900px, 100%)">
+                        <img src="img/techart/Dieselpunk2.png" width="1280" height="720" style="width:min(900px, 100%)">
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="ugly">
+                    <h2 class="center">'Ugly' Shader</h2>
+                    <p>
+                        Yeah
+                    </p>
+                    
+                    <div class="simpleGallery" style="margin-top:0">
+                        <img src="img/techart/Oogle.gif" width="1280" height="720" style="width:min(900px, 100%)">
+                        <img src="img/techart/Oogle1.png" width="1280" height="720" style="width:min(900px, 100%)">
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="center" style="margin-top:100px; margin-bottom:10px; display:inline-block;">
+                <a href="about.html" style="margin-left:100px;"><p class="link">Contact</p></a>
+            </div>
+        </footer>
+
+    </body>
+</html>

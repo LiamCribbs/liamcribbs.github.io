@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="script.js"></script>
+        <title>
+            Liam Cribbs
+        </title>
+        <meta name="description" content="Liam Cribbs' Portfolio">
+        <meta name="keywords" content="Liam Cribbs">
+        <meta name="author" content="Liam Cribbs">
+    </head>
+
+    <body>
+        <div class="nav">
+            <div></div>
+            <nav class="alignCenter mainNav">
+                <ul>
+                    <a href="index.html">
+                        <li class="button">
+                            Home
+                        </li>
+                    </a>
+                    <a href="index.html#games">
+                        <li class="button">
+                            Games
+                        </li>
+                    </a>
+                    <a href="techart.html">
+                        <li class="button">
+                            Tech Art
+                        </li>
+                    </a>
+                    <a href="animation.html">
+                        <li class="button">
+                            3D Animation
+                        </li>
+                    </a>
+                    <a href="ui.html">
+                        <li class="button">
+                            UI
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            
+            <nav class="alignRight mainNav">
+                <ul>
+                    <a href="about.html">
+                        <li class="button">
+                            About
+                        </li>
+                    </a>
+                    <a href="resume.html">
+                        <li class="button">
+                            Resume
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hamMenu">
+            <a href="javascript:void(0)" onclick="toggleHam()">
+                <span class="link material-symbols-outlined" id="hamButton" style="padding-left:5px; padding-right:5px; font-size: 50px;">
+                    menu
+                </span>
+            </a>
+            <div id="toggleMenu">
+                <a href="index.html">
+                    <h3 class="link">Home</h3>
+                </a>
+                <a href="index.html#games">
+                    <h3 class="link">Games</h3>
+                </a>
+                <a href="techart.html">
+                    <h3 class="link">Tech Art</h3>
+                </a>
+                <a href="animation.html">
+                    <h3 class="link">3D Animation</h3>
+                </a>
+                <a href="ui.html">
+                    <h3 class="link">UI</h3>
+                </a>
+                <div style="margin: 60px 0px;"></div>
+                <a href="about.html">
+                    <h3 class="link">About</h3>
+                </a>
+                <a href="resume.html">
+                    <h3 class="link">Resume</h3>
+                </a>
+            </div>
+        </div>
+        
+        <header class="imgHeader">
+            <bkg style="background-image: url('img/AnimationCover.png');">
+            <section class="center headerSection">
+                <h1>3D Animation</h1>
+            </section>
+            </bkg>
+        </header>
+
+        <main>
+            <section>
+                <div class="smallNav">
+                    <a href="#first">
+                        <h3 class="link">First Person</h3>
+                    </a>
+                    <a href="#third">
+                        <h3 class="link">Third Person</h3>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="first">
+                    <h2 class="center">First Person</h2>
+                    <div class="simpleGallery">
+                        <h5 class="center" style="width:100%; margin-bottom: -30px;">Hand animations from <a class="link" href="fishgun.html">FISHGUN</a></h5>
+                        <div class="ytContainer" style="margin-top:40px">
+                            <iframe src="https://www.youtube.com/embed/DKqLrXBOFjU" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="ytContainer" style="margin-top:40px">
+                            <iframe src="https://www.youtube.com/embed/QhZ6ZXWk_X8" allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="center" style="width:100%; margin-bottom: -30px;">Animations from my <a class="link" href="prototypes.html#fpmovement">first person controller</a></h5>
+                        <div class="ytContainer" style="margin-top:40px">
+                            <iframe src="https://www.youtube.com/embed/mL1qIvztfEU" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="third">
+                    <h2 class="center">Third Person</h2>
+                    <div class="simpleGallery">
+                        <h5 class="center" style="width:100%; margin-bottom: -30px;">Player animations from <a class="link" href="skysailors.html">Sky Sailors</a></h5>
+                        <div class="ytContainer" style="margin-top:40px; width:min(504px, 100vw); height:min(504px, 100vw);">
+                            <iframe src="https://www.youtube.com/embed/3yc_KDWPilM" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="ytContainer" style="margin-top:40px; width:min(504px, 100vw); height:min(504px, 100vw);">
+                            <iframe src="https://www.youtube.com/embed/UKfcIEnmNVs" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="ytContainer" style="margin-top:40px; width:min(504px, 100vw); height:min(504px, 100vw);">
+                            <iframe src="https://www.youtube.com/embed/lysOKLhfeRk" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="center" style="margin-top:100px; margin-bottom:10px; display:inline-block;">
+                <a href="about.html" style="margin-left:100px;"><p class="link">Contact</p></a>
+            </div>
+        </footer>
+
+    </body>
+</html>
