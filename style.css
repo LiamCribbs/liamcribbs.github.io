@@ -564,6 +564,16 @@ footer
         width: 80%;
     }
 
+    .link
+    {
+        background-size: 100% 4px;
+    }
+
+    .link:active
+    {
+        background-size: 100% 4px;
+    }
+
     h1
     {
         font-size: 60px;
