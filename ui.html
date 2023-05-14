@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="script.js"></script>
+        <title>
+            Liam Cribbs
+        </title>
+        <meta name="description" content="Liam Cribbs' Portfolio">
+        <meta name="keywords" content="Liam Cribbs">
+        <meta name="author" content="Liam Cribbs">
+    </head>
+
+    <body>
+        <div class="nav">
+            <div></div>
+            <nav class="alignCenter mainNav">
+                <ul>
+                    <a href="index.html">
+                        <li class="button">
+                            Home
+                        </li>
+                    </a>
+                    <a href="index.html#games">
+                        <li class="button">
+                            Games
+                        </li>
+                    </a>
+                    <a href="techart.html">
+                        <li class="button">
+                            Tech Art
+                        </li>
+                    </a>
+                    <a href="animation.html">
+                        <li class="button">
+                            3D Animation
+                        </li>
+                    </a>
+                    <a href="ui.html">
+                        <li class="button">
+                            UI
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            
+            <nav class="alignRight mainNav">
+                <ul>
+                    <a href="about.html">
+                        <li class="button">
+                            About
+                        </li>
+                    </a>
+                    <a href="resume.html">
+                        <li class="button">
+                            Resume
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hamMenu">
+            <a href="javascript:void(0)" onclick="toggleHam()">
+                <span class="link material-symbols-outlined" id="hamButton" style="padding-left:5px; padding-right:5px; font-size: 50px;">
+                    menu
+                </span>
+            </a>
+            <div id="toggleMenu">
+                <a href="index.html">
+                    <h3 class="link">Home</h3>
+                </a>
+                <a href="index.html#games">
+                    <h3 class="link">Games</h3>
+                </a>
+                <a href="techart.html">
+                    <h3 class="link">Tech Art</h3>
+                </a>
+                <a href="animation.html">
+                    <h3 class="link">3D Animation</h3>
+                </a>
+                <a href="ui.html">
+                    <h3 class="link">UI</h3>
+                </a>
+                <div style="margin: 60px 0px;"></div>
+                <a href="about.html">
+                    <h3 class="link">About</h3>
+                </a>
+                <a href="resume.html">
+                    <h3 class="link">Resume</h3>
+                </a>
+            </div>
+        </div>
+        
+        <header class="imgHeader">
+            <bkg style="background-image: url('img/techart/LCD.gif');">
+            <section class="center headerSection">
+                <h1 style="color: rgb(239, 239, 239)">UI</h1>
+            </section>
+            </bkg>
+        </header>
+
+        <main>
+            <section>
+                <div class="smallNav">
+                    <a href="#rocks">
+                        <h3 class="link">Rocks and Stocks</h3>
+                    </a>
+                    <a href="#sky">
+                        <h3 class="link">Sky Sailors</h3>
+                    </a>
+                    <a href="#fishgun">
+                        <h3 class="link">FISHGUN</h3>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <article class="content" style="padding-top: 80px;" id="rocks">
+                    <h2 class="center">Rocks and Stocks</h2>
+                    <div class="simpleGallery">
+                        <p>These interfaces were developed for <a class="link" href="rocksandstocks.html">Rocks and Stocks</a>. I put an emphasis on fun interactions in the windows themselves. For example, instead of pressing a button to open a door, the player must drag a door-shaped slider to its open position. It was a lot of fun experimenting with new interactions, including 2-axis sliders and spinning wheels.</p>
+                        <img src="img/rocksandstocks/ReactorCooling.gif" width="1280" height="720" style="width:min(750px, 100%)">
+                        <img src="img/rocksandstocks/AsteroidProcessing.gif" width="1280" height="720" style="width:min(750px, 100%)">
+                        <img src="img/rocksandstocks/FlyingShip.gif" width="1280" height="720" style="width:min(750px, 100%)">
+                        <img src="img/rocksandstocks/GrabberArm.gif" width="1280" height="720" style="width:min(750px, 100%)">
+                    </div>
+                </article>
+
+                <article class="content" style="padding-top: 80px;" id="sky">
+                    <h2 class="center">Sky Sailors</h2>
+                    <div class="simpleGallery">
+                        <p>I programmed and designed the UI for <a class="link" href="skysailors.html">Sky Sailors</a>. This game has full controller support, so the floating cursor needed to work with controllers as well as mice. I created all of the UI scripts & buttons.</p>
+                        <img src="img/skysailors/FabricatorUI.gif" width="1280" height="720" style="width:min(750px, 100%)">
+                        <img src="img/skysailors/MenuUI.gif" width="1280" height="720" style="width:min(750px, 100%)">
+                    </div>
+                </article>
+
+                <article class="content" style="padding-top: 80px;" id="fishgun">
+                    <h2 class="center">FISHGUN</h2>
+                    <div class="simpleGallery">
+                        <p>I programmed and designed the UI for <a class="link" href="fishgun.html">FISHGUN</a>. I added unique animations to each crosshair when firing.</p>
+                        <div class="ytContainer" style="margin-top:40px">
+                            <iframe src="https://www.youtube.com/embed/fjXFPMl9xgs" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="ytContainer" style="margin-top:40px">
+                            <iframe src="https://www.youtube.com/embed/lPnF0IZkabY" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="center" style="margin-top:100px; margin-bottom:10px; display:inline-block;">
+                <a href="about.html" style="margin-left:100px;"><p class="link">Contact</p></a>
+            </div>
+        </footer>
+
+    </body>
+</html>

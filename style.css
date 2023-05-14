@@ -216,7 +216,7 @@ footer
 {
     display: grid;
     grid-template-columns: 0.8fr 1.4fr 0.8fr;
-    height: 95px;
+    height: 85px;
     position: sticky;
     top: 0px;
     background-color:rgb(36, 36, 36);
