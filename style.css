@@ -65,9 +65,7 @@ p
 h1, h2
 {
     font-family: 'Qua';
-    /* font-size: 6.5em; */
-    font-size: 10px;
-    color: red;
+    font-size: 6.5em;
     font-weight: normal;
     line-height: 95%;
     margin-top: 25px;
@@ -123,14 +121,14 @@ footer
     display: flex;
 }
 
-@media screen and ((max-width: 700px) or (orientarion: portrait))
+/* @media screen and ((max-width: 700px) or (orientarion: portrait))
 {
     h1
     {
         font-size: 10px;
         color: red;
     }
-}
+} */
 
 .center
 {
@@ -311,7 +309,7 @@ footer
 .gallery div img
 {
     width: 100%;
-    height:100%;
+    height: 100%;
     object-fit:cover;
 }
 
@@ -474,6 +472,28 @@ footer
     width: min(552px, 80%);
 }
 
+.simpleGallery
+{
+    margin: auto;
+    margin-top: 40px;
+    align-content: center;
+    width: min(1800px, 100%);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.simpleGallery img
+{
+    width: min(600px, 100%);
+    height: auto;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
 @media screen and ((max-width: 767px) or (orientation: portrait))
 {
     .imgHeader
@@ -501,6 +521,12 @@ footer
     .itchWidget
     {
         width: 80%;
+    }
+
+    h1
+    {
+        font-size: 10px;
+        color: red;
     }
 }
 
