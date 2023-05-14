@@ -65,7 +65,9 @@ p
 h1, h2
 {
     font-family: 'Qua';
-    font-size: 6.5em;
+    /* font-size: 6.5em; */
+    font-size: 10px;
+    color: red;
     font-weight: normal;
     line-height: 95%;
     margin-top: 25px;
